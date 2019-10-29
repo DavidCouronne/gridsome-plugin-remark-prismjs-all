@@ -9,7 +9,7 @@ Inspired by [gatsby-remark-prismjs](https://github.com/gatsbyjs/gatsby/tree/mast
 ## Install
 
 ```bash
-npm install --save gridsome-plugin-remark-prism-all
+npm i gridsome-plugin-remark-prismjs-all
 ```
 
 ## How to use

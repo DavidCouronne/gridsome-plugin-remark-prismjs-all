@@ -214,6 +214,193 @@ You can add this CSS:
 }
 ```
 
-You can also target the `span`.
+You can also target the `span`tag.
+
+## Usage in Markdown
+
+### Basic usage
+
+``````markdown
+```js
+const myvar = 'some value";
+```
+``````
+
+
+
+### Code Title
+
+``````md
+```js{codeTitle: "In src/main.js"}
+require("prismjs/themes/prism-solarizedlight.css")
+require("prismjs/plugins/line-numbers/prism-line-numbers.css")
+require("prismjs/plugins/command-line/prism-command-line.css")
+```
+``````
+
+
+### Lines Numbers
+
+To see the line numbers alongside your code, you can use the `numberLines` option:
+
+`````md
+```html{numberLines: true}
+<template>
+  <Layout>
+    <h2>Latest blog posts</h2>
+    <ul>
+      <li v-for="edge in $page.allWordPressPost.edges" :key="edge.node.id">
+        {{ edge.node.title }}
+      </li>
+    </ul>
+  </Layout>
+</template>
+```
+``````
+You can also start numbering at any index you wish (here, numbering
+will start at index 21):
+
+`````md
+```html{numberLines: 21}
+<template>
+  <Layout>
+    <h2>Latest blog posts</h2>
+    <ul>
+      <li v-for="edge in $page.allWordPressPost.edges" :key="edge.node.id">
+        {{ edge.node.title }}
+      </li>
+    </ul>
+  </Layout>
+</template>
+```
+``````
+
+
+
+### Lines Highlighting
+
+You can also add line highlighting. It adds a span around lines of code with a
+special class `.gridsome-highlight-code-line` that you can target with styles.
+
+You can specify the highlighted lines outside of the code block.
+In the following code snippet, lines 3 and 5 through 7 will get the line
+highlighting. The line range parsing is done with
+<https://www.npmjs.com/package/parse-numeric-range>.
+
+`````md
+```html{3,5-7}
+<template>
+  <Layout>
+    <h2>Latest blog posts</h2>
+    <ul>
+      <li v-for="edge in $page.allWordPressPost.edges" :key="edge.node.id">
+        {{ edge.node.title }}
+      </li>
+    </ul>
+  </Layout>
+</template>
+```
+``````
+
+
+
+### All Together
+
+`````md
+```html{3,5-7}{numberLines: 21}{codeTitle: "In src/pages/Index.vue"}
+<template>
+  <Layout>
+    <h2>Latest blog posts</h2>
+    <ul>
+      <li v-for="edge in $page.allWordPressPost.edges" :key="edge.node.id">
+        {{ edge.node.title }}
+      </li>
+    </ul>
+  </Layout>
+</template>
+```
+``````
+
+
+
+
+### Prompt
+
+To show fancy prompts next to shell commands (only triggers on `bash`), either set `prompt.global` to `true` in `gridsome.config.js`,
+or pass at least one of `{outputLines: <range>}`, `{promptUser: <user>}`, or `{promptHost: <host>}` to a snippet
+
+By default, every line gets a prompt appended to the start, this behaviour can be changed by specifying `{outputLines: <range>}`
+to the language.
+
+````
+```bash{outputLines: 2-10,12}
+````
+
+The user and host used in the appended prompt is pulled from the `prompt.user` and `prompt.host` values,
+unless explicitly overridden by the `promptUser` and `promptHost` options in the snippet, e.g.:
+
+````
+```bash{promptUser: alice}{promptHost: dev.localhost}
+````
+
+### Add new language definition or extend an existing language
+
+You can provide a language extension by giving a single object or an array of
+language extension objects as the `languageExtensions` option.
+
+A language extension object looks like this:
+
+```javascript
+languageExtensions: [
+  {
+    language: "superscript",
+    extend: "javascript",
+    definition: {
+      superscript_types: /(SuperType)/,
+    },
+    insertBefore: {
+      function: {
+        superscript_keywords: /(superif|superelse)/,
+      },
+    },
+  },
+]
+```
+
+used options:
+
+- `language` (optional) The name of the new language.
+- `extend` (optional) The language you wish to extend.
+- `definition` (optional) This is the Prism language definition.
+- `insertBefore` (optional) Is used to define where in the language definition we want to insert our extension.
+
+More information of the format can be found here:
+https://prismjs.com/extending.html
+
+Note:
+
+- One of the parameters `language` and `extend` is needed.
+- If only `language` is given, a new language will be defined from scratch.
+- If only `extend` is given, an extension will be made to the given language.
+- If both `language` and `extend` is given, a new language that extends the `extend` language will
+  be defined.
+
+In case a language is extended, note that the definitions will not be merged.
+If the extended language definition and the given definition contains the same
+token, the original pattern will be overwritten.
+
+One of the parameters `definition` and `insertBefore` needs to be defined.
+`insertBefore` needs to be combined with `definition` or `extend` (otherwise
+there will not be any language definition tokens to insert before).
+
+In addition to this extension parameters the css also needs to be updated to
+get a style for the new tokens. Prism will wrap the matched tokens with a
+`span` element and give it the classes `token` and the token name you defined.
+In the example above we would match `superif` and `superelse`. In the html
+it would result in the following when a match is found:
+
+```html
+<span class="token superscript_keywords">superif</span>
+```
 
 

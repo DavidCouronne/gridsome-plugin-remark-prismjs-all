@@ -81,7 +81,7 @@ module.exports = options => {
             node.type = `html`
             node.value = ``
                 + `${codeTitle ? `<div class="${codeTitleClassName}"><span>${codeTitle}</span></div>` : ``}`
-                + `<div class="${highlightClassName}" data-language="${languageName}">`                
+                + `<div class="${highlightClassName}" data-language="${languageName}">`
                 + `<pre${numLinesStyle} class="${className}${numLinesClass}">`
                 + `<code class="${className}">`
                 + `${useCommandLine ? commandLine(node.value, outputLines, promptUser, promptHost) : ``}`
@@ -90,11 +90,29 @@ module.exports = options => {
                 + `${numLinesNumber}`
                 + `</pre>`
                 + `</div>`
-        
+        }
 
-
-    });
-}
+        );
+        visit(tree, `inlineCode`, node => {
+            let languageName = `text`
+      
+            if (inlineCodeMarker) {
+              let [language, restOfValue] = node.value.split(`${inlineCodeMarker}`, 2)
+              if (language && restOfValue) {
+                languageName = normalizeLanguage(language)
+                node.value = restOfValue
+              }
+            }
+      
+            const className = `${classPrefix}${languageName}`
+      
+            node.type = `html`
+            node.value = `<code class="${className}">${highlightCode(
+              languageName,
+              node.value
+            )}</code>`
+          })
+    }
 }
 
 

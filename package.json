@@ -5,6 +5,23 @@
   "main": "src/index.js",
   "author": "David Couronné",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavidCouronne/gridsome-plugin-remark-prismjs-all.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DavidCouronne/gridsome-plugin-remark-prismjs-all/issues"
+  },
+  "homepage": "https://github.com/DavidCouronne/gridsome-plugin-remark-prismjs-all",
+  "keywords": [
+    "gridsome",
+    "gridsome-plugin",
+    "prismjs",
+    "syntax",
+    "markdown",
+    "remark",
+    "vuejs"
+  ],
   "dependencies": {
     "lodash": "^4.17.15",
     "parse-numeric-range": "^0.0.2",

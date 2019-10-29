@@ -4,7 +4,7 @@ Adds syntax highlighting to code blocks in markdown files using [PrismJS](https:
 
 Inspired by [gatsby-remark-prismjs](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-remark-prismjs)
 
-![example](https://github.com/DavidCouronne/gridsome-plugin-remark-prism-all/blob/master/snapshots/snapshot.png?raw=true)
+![example](https://github.com/DavidCouronne/gridsome-plugin-remark-prismjs-all/blob/master/snapshots/snapshot.png?raw=true)
 
 ## Install
 

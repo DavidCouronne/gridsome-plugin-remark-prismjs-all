@@ -2,6 +2,8 @@
 
 Adds syntax highlighting to code blocks in markdown files using [PrismJS](https://prismjs.com/)
 
+See live demo [here](https://gridsome-plugin-demo.netlify.com/demo-gridsome-plugin-remark-prismjs-all/) !
+
 Inspired by [gatsby-remark-prismjs](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-remark-prismjs)
 
 ![example](https://github.com/DavidCouronne/gridsome-plugin-remark-prismjs-all/blob/master/snapshots/snapshot.png?raw=true)

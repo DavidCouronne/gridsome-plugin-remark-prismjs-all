@@ -34,9 +34,17 @@ transformers: {
 
 ### Add theme in your main.js
 
+There is only two themes available at this time. Contributions welcomes !
+
+
 ```js
 // In your main.js
 require('gridsome-plugin-remark-prismjs-all/themes/night-owl.css');
+```
+
+```js
+// In your main.js
+require('gridsome-plugin-remark-prismjs-all/themes/tomorrow.css');
 ```
 
 ## Options

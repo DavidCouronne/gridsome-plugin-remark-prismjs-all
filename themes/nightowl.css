@@ -1,0 +1,68 @@
+.token {
+  display: inline-block;
+}
+
+p > code,
+li > code {
+  background: #011627;
+  color: #d6deeb;
+  padding: 2em 1em;
+}
+
+pre {
+  font-size: 1rem;
+  padding: 1rem;
+  -webkit-overflow-scrolling: touch;
+  background-color: transparent;
+  overflow: initial;
+  float: left;
+  min-width: 100%;
+  margin-bottom: 0;
+}
+
+.gridsome-highlight {
+  font-size: 1em;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  background: #011627;
+  overflow: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.gridsome-highlight .token-line {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+.gridsome-highlight pre[class*="language-"]:before {
+  background: white;
+  border-radius: 0 0 0.25rem 0.25rem;
+  color: black;
+  font-size: 12px;
+  letter-spacing: 0.025rem;
+  padding: 0.1rem 0.5rem;
+  position: absolute;
+  left: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0;
+}
+
+.gridsome-highlight pre[class~="language-js"]:before {
+  content: "js";
+  background: #61dafb;
+  color: black;
+}
+
+.gridsome-highlight > code[class*="language-"], .gridsome-highlight > pre[class*="language-"] {
+  word-spacing: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.gridsome-highlight-code-line {
+  background-color: #023751;
+  border-left: 4px solid #029bce;
+}
+/*# sourceMappingURL=nightowl.css.map */

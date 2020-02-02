@@ -1,0 +1,62 @@
+.token {
+    display: inline-block;
+  }
+  p > code,
+  li > code {
+    background: rgb(1, 22, 39);
+    color: rgb(214, 222, 235);
+    padding: 2em 1em;
+  }
+  pre {
+    font-size: 1rem;
+      padding: 1rem;
+      -webkit-overflow-scrolling: touch;
+      background-color: transparent;
+      overflow: initial;
+      float: left;
+      min-width: 100%;
+      margin-bottom: 0;
+  }
+  .gridsome-highlight {
+    font-size: 1em;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    background: rgb(1, 22, 39);
+    overflow: auto;
+    margin-left: 0;
+    margin-right: 0;
+    .token-line {
+      margin-left: -0.75rem;
+      margin-right: -0.75rem;
+    }
+  
+    pre[class*="language-"]:before {
+      background: white;
+      border-radius: 0 0 0.25rem 0.25rem;
+      color: black;
+      font-size: 12px;
+      letter-spacing: 0.025rem;
+      padding: 0.1rem 0.5rem;
+      position: absolute;
+      left: 1rem;
+      text-align: right;
+      text-transform: uppercase;
+      top: 0;
+    }
+    pre[class~="language-js"]:before {
+      content: "js";
+      background: #61dafb;
+      color: black;
+    }
+    
+  }
+  .gridsome-highlight > code[class*="language-"], .gridsome-highlight > pre[class*="language-"] {
+  word-spacing: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  }
+  .gridsome-highlight-code-line{
+   
+  background-color: rgb(2, 55, 81);
+  border-left: 4px solid rgb(2, 155, 206);
+  }

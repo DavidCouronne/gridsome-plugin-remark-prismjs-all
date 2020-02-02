@@ -6,7 +6,7 @@ See live demo [here](https://5e145900f69efacdc2a95dfe--kind-elion-23889d.netlify
 
 Inspired by [gatsby-remark-prismjs](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-remark-prismjs)
 
-![example](https://github.com/DavidCouronne/gridsome-plugin-remark-prismjs-all/blob/master/snapshots/snapshot.png?raw=true)
+![example](https://github.com/DavidCouronne/gridsome-plugin-remark-prismjs-all/blob/master/snapshots/snapshot-nighto-owl.png?raw=true)
 
 ## Install
 
@@ -14,9 +14,8 @@ Inspired by [gatsby-remark-prismjs](https://github.com/gatsbyjs/gatsby/tree/mast
 npm i gridsome-plugin-remark-prismjs-all
 ```
 
-## How to use
 
-### With default options:
+### Add plugin in gridsome.config.js
 
 ```js
 // In your gridsome.config.js
@@ -32,6 +31,15 @@ transformers: {
     }
   }
 ```
+
+### Add theme in your main.js
+
+```js
+// In your main.js
+require('gridsome-plugin-remark-prismjs-all/themes/night-owl.css');
+```
+
+## Options
 
 ### With some options:
 

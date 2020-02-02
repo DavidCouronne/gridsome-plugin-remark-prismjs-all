@@ -1,0 +1,29 @@
+pre[class*="language-"]:before {
+  background: white;
+  border-radius: 0 0 0.25rem 0.25rem;
+  color: black;
+  font-size: 12px;
+  letter-spacing: 0.025rem;
+  padding: 0.1rem 0.5rem;
+  position: absolute;
+  left: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0;
+}
+pre[class~="language-js"]:before {
+  content: "js";
+  background: #61dafb;
+  color: black;
+}
+pre[class~="language-html"]:before {
+  content: "html";
+  background: #005a9c;
+  color: white;
+}
+pre[class~="language-markdown"]:before {
+  content: "md";
+}
+pre[class~="language-md"]:before {
+  content: "md";
+}

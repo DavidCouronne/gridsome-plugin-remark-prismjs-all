@@ -6,7 +6,7 @@ See live demo [here](https://5e145900f69efacdc2a95dfe--kind-elion-23889d.netlify
 
 Inspired by [gatsby-remark-prismjs](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-remark-prismjs)
 
-![example](https://github.com/DavidCouronne/gridsome-plugin-remark-prismjs-all/blob/master/snapshots/snapshot-nighto-owl.png?raw=true)
+![example](https://github.com/DavidCouronne/gridsome-plugin-remark-prismjs-all/blob/master/snapshots/snapshot-night-owl.png?raw=true)
 
 ## Install
 

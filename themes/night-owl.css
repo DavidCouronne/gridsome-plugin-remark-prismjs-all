@@ -1,3 +1,11 @@
+:root {
+  --code-bg: rgb(1, 22, 39);
+  --code-title-bg-color: #d2c7ec;
+  --code-title-color: #000;
+  --code-line-bg: rgb(2, 55, 81);
+  --code-line-border-color: rgb(2, 155, 206);
+}
+
 code[class*='language-'],
 pre[class*='language-'] {
   color: #d6deeb;
@@ -219,50 +227,35 @@ pre[class*="language-"].line-numbers > code {
   content: attr(data-prompt);
 }
 
-.gridsome-highlight {
-  background-color: #011627;
-  position: relative;
-  border-radius: 0.3em;
-  margin: 0.5em 0;
-  padding: 1em;
-  overflow: auto;
-}
-
-.gridsome-highlight pre[class*="language-"] {
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  overflow: initial;
-  float: left;
-  /* 1 */
-  min-width: 100%;
-  /* 2 */
-}
-
-.gridsome-highlight-code-line {
-  background-color: #023751;
-  display: block;
-  margin-right: -1em;
-  margin-left: -1em;
-  padding-right: 1em;
-  padding-left: 0.75em;
-  border-left: 0.25em solid #029bce;
-}
-
 .gridsome-code-title {
   position: relative;
-  z-index: 100;
   margin-bottom: -0.8em;
-  background-color: #d2c7ec;
-  color: #000;
+  background-color: var(--code-title-bg-color);
+  color: var(--code-title-color);
   font-size: 0.875rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.gridsome-highlight-code-line {
+  background-color: var(--code-line-bg);
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid var(--code-line-border-color);
+}
+
+.gridsome-highlight {
+  background-color: var(--code-bg);
+  position: relative;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
 }
 
 .gridsome-highlight pre[class*="language-"] {
@@ -282,5 +275,44 @@ pre[class*="language-"].line-numbers > code {
   position: relative;
   padding-left: 3.8em;
   counter-reset: linenumber;
+}
+
+pre[class*="language-"]:before {
+  background: white;
+  border-radius: 0 0 0.25rem 0.25rem;
+  color: black;
+  font-size: 12px;
+  letter-spacing: 0.025rem;
+  padding: 0.1rem 0.5rem;
+  position: absolute;
+  left: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0;
+}
+
+pre[class*="language-"].line-numbers:before {
+  margin-top: -1.7em;
+  margin-left: 2em;
+}
+
+pre[class~="language-js"]:before {
+  content: "js";
+  background: #61dafb;
+  color: black;
+}
+
+pre[class~="language-html"]:before {
+  content: "html";
+  background: #005a9c;
+  color: white;
+}
+
+pre[class~="language-markdown"]:before {
+  content: "md";
+}
+
+pre[class~="language-md"]:before {
+  content: "md";
 }
 /*# sourceMappingURL=night-owl.css.map */

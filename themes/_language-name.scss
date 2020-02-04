@@ -11,6 +11,11 @@ pre[class*="language-"]:before {
   text-transform: uppercase;
   top: 0;
 }
+pre[class*="language-"].line-numbers:before {
+  margin-top: -1.7em;
+  margin-left: 2em;
+
+}
 pre[class~="language-js"]:before {
   content: "js";
   background: #61dafb;

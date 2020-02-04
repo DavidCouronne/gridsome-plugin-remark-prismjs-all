@@ -3,7 +3,7 @@
   }
   p > code,
   li > code {
-    background: rgb(1, 22, 39);
+    background: var(--code-bg);
     color: rgb(214, 222, 235);
     padding: 2em 1em;
   }
@@ -21,7 +21,7 @@
     font-size: 1em;
     position: relative;
     -webkit-overflow-scrolling: touch;
-    background: rgb(1, 22, 39);
+    background: var(--code-bg);
     overflow: auto;
     margin-left: 0;
     margin-right: 0;

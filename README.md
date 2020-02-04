@@ -1,3 +1,6 @@
+[![npm version](https://badge.fury.io/js/gridsome-plugin-remark-prismjs-all.svg)](https://badge.fury.io/js/gridsome-plugin-remark-prismjs-all)
+
+
 # gridsome-plugin-remark-prism-all
 
 Adds syntax highlighting to code blocks in markdown files using [PrismJS](https://prismjs.com/)

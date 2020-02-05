@@ -1,6 +1,6 @@
 {
   "name": "gridsome-plugin-remark-prismjs-all",
-  "version": "0.2.8",
+  "version": "0.3.0",
   "description": "Gridsome plugin prism syntax highlighting",
   "main": "src/index.js",
   "author": "David Couronné",
@@ -27,5 +27,16 @@
     "parse-numeric-range": "^0.0.2",
     "prismjs": "^1.19.0",
     "unist-util-visit": "^2.0.1"
-  }
+  },
+  "devDependencies": {
+    "projectz": "^1.19.0"
+  },
+  "scripts": {
+    "compile": "projectz compile",
+    "posttest": "npm run compile"
+  },
+  "maintainers": [],
+  "contributors": [
+    "David Couronné (http://mathssyfy.firebaseapp.com/)"
+  ]
 }

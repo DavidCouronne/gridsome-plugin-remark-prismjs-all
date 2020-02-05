@@ -32,3 +32,27 @@ pre[class~="language-markdown"]:before {
 pre[class~="language-md"]:before {
   content: "md";
 }
+pre[class~="language-bash"]:before {
+  content: "bash";
+}
+pre[class~="language-shell"]:before {
+  content: "shell";
+}
+pre[class~="language-css"]:before {
+  background: rgb(255, 152, 0);
+  color: white;
+  content: "css";
+}
+pre[class~="language-jsx"]:before {
+  background: rgb(97, 218, 251);
+  content: "jsx";
+}
+pre[class~="language-json"]:before {
+  background: linen;
+  content: "json";
+}
+pre[class~="language-graphql"]:before {
+  background: rgb(225, 0, 152);
+  color: white;
+  content: "graphql";
+}

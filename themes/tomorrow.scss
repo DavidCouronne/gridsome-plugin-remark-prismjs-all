@@ -1,14 +1,21 @@
+:root {
+  --code-bg: #2d2d2d;
+  --code-title-bg-color: #5b575b;
+  --code-title-color: #cbc4cc;
+  --code-line-bg: rgba(0, 0, 0, 0.3);
+  --code-line-border-color: #f99;
+}
+
 @import "prism-tomorrow";
-@import 'prism-line-numbers';
-@import 'prism-command-line';
+@import "prism-line-numbers";
+@import "prism-command-line";
 
+code {
+  background-color: #2d2d2d;
+}
 
+@import "./code-title";
 .gridsome-code-title {
-  position: relative;
-  z-index: 100;
-  margin-bottom: -0.8em;
-  background: #5b575b;
-  color: #cbc4cc; // why not ;-)
   font-style: italic;
   font-weight: 100;
   text-align: right;
@@ -21,42 +28,6 @@
     padding: 0.5em;
   }
 }
-
-.gridsome-highlight {
-  background-color: #2d2d2d;
-  border-radius: 0.3em;
-  margin: 0.5em 0;
-  padding: 1em;
-  overflow: auto;
-}
-
-.gridsome-highlight pre[class*="language-"] {
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  overflow: initial;
-  float: left; /* 1 */
-  min-width: 100%; /* 2 */
-}
-
-.gridsome-highlight pre[class*="language-"].line-numbers {
-  position: relative;
-  padding-left: 3.8em;
-  counter-reset: linenumber;
-}
-
-code {
-  background-color: #2d2d2d;
-}
-
-.gridsome-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.3);
-  display: block;
-  margin-right: -1em;
-  margin-left: -1em;
-  padding-right: 1em;
-  padding-left: 0.75em;
-  border-left: 0.25em solid #f99;
-}
+@import "./code_line";
+@import "./code_highlight";
+@import "./language-name";

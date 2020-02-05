@@ -1,0 +1,7 @@
+{
+  "license": "MIT",
+
+  "badges": {
+    "list": ["npmversion", "npmdownloads", "daviddm", "daviddmdev", "---"]
+  }
+}

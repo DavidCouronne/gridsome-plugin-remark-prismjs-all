@@ -1,26 +1,4 @@
-<!-- TITLE/ -->
-
-<h1>gridsome-plugin-remark-prismjs-all</h1>
-
-<!-- /TITLE -->
-
-
-<!-- BADGES/ -->
-
-<span class="badge-npmversion"><a href="https://npmjs.org/package/gridsome-plugin-remark-prismjs-all" title="View this project on NPM"><img src="https://img.shields.io/npm/v/gridsome-plugin-remark-prismjs-all.svg" alt="NPM version" /></a></span>
-<span class="badge-npmdownloads"><a href="https://npmjs.org/package/gridsome-plugin-remark-prismjs-all" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/gridsome-plugin-remark-prismjs-all.svg" alt="NPM downloads" /></a></span>
-<span class="badge-daviddm"><a href="https://david-dm.org/DavidCouronne/gridsome-plugin-remark-prismjs-all" title="View the status of this project's dependencies on DavidDM"><img src="https://img.shields.io/david/DavidCouronne/gridsome-plugin-remark-prismjs-all.svg" alt="Dependency Status" /></a></span>
-<span class="badge-daviddmdev"><a href="https://david-dm.org/DavidCouronne/gridsome-plugin-remark-prismjs-all#info=devDependencies" title="View the status of this project's development dependencies on DavidDM"><img src="https://img.shields.io/david/dev/DavidCouronne/gridsome-plugin-remark-prismjs-all.svg" alt="Dev Dependency Status" /></a></span>
-<br class="badge-separator" />
-
-<!-- /BADGES -->
-
-
-<!-- DESCRIPTION/ -->
-
-Gridsome plugin prism syntax highlighting
-
-<!-- /DESCRIPTION -->
+[![npm version](https://badge.fury.io/js/gridsome-plugin-remark-prismjs-all.svg)](https://badge.fury.io/js/gridsome-plugin-remark-prismjs-all)
 
 
 # gridsome-plugin-remark-prism-all
@@ -450,27 +428,3 @@ it would result in the following when a match is found:
 ```html
 <span class="token superscript_keywords">superif</span>
 ```
-
-
-<!-- HISTORY/ -->
-
-<h2>History</h2>
-
-<a href="https://github.com/DavidCouronne/gridsome-plugin-remark-prismjs-all/releases">Discover the release history by heading on over to the releases page.</a>
-
-<!-- /HISTORY -->
-
-
-<!-- LICENSE/ -->
-
-<h2>License</h2>
-
-Unless stated otherwise all works are:
-
-<ul><li>Copyright &copy; David Couronné</li></ul>
-
-and licensed under:
-
-<ul><li><a href="http://spdx.org/licenses/MIT.html">MIT License</a></li></ul>
-
-<!-- /LICENSE -->

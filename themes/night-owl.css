@@ -315,4 +315,34 @@ pre[class~="language-markdown"]:before {
 pre[class~="language-md"]:before {
   content: "md";
 }
+
+pre[class~="language-bash"]:before {
+  content: "bash";
+}
+
+pre[class~="language-shell"]:before {
+  content: "shell";
+}
+
+pre[class~="language-css"]:before {
+  background: #ff9800;
+  color: white;
+  content: "css";
+}
+
+pre[class~="language-jsx"]:before {
+  background: #61dafb;
+  content: "jsx";
+}
+
+pre[class~="language-json"]:before {
+  background: linen;
+  content: "json";
+}
+
+pre[class~="language-graphql"]:before {
+  background: #e10098;
+  color: white;
+  content: "graphql";
+}
 /*# sourceMappingURL=night-owl.css.map */

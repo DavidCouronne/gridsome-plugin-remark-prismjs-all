@@ -1,20 +1,43 @@
 :root {
-  --code-bg: #2d2d2d;
-  --code-title-bg-color: #5b575b;
-  --code-title-color: #cbc4cc;
-  --code-line-bg: rgba(0, 0, 0, 0.3);
+  --code-bg: #fdf6e3;
+  --code-title-bg-color: #feb;
+  --code-title-color: #000;
+  --code-line-bg: #feb;
   --code-line-border-color: #f99;
 }
 
-/**
- * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
- * Based on https://github.com/chriskempson/tomorrow-theme
- * @author Rose Pritchard
- */
+/*
+ Solarized Color Schemes originally by Ethan Schoonover
+ http://ethanschoonover.com/solarized
+
+ Ported for PrismJS by Hector Matos
+ Website: https://krakendev.io
+ Twitter Handle: https://twitter.com/allonsykraken)
+*/
+/*
+SOLARIZED HEX
+--------- -------
+base03    #002b36
+base02    #073642
+base01    #586e75
+base00    #657b83
+base0     #839496
+base1     #93a1a1
+base2     #eee8d5
+base3     #fdf6e3
+yellow    #b58900
+orange    #cb4b16
+red       #dc322f
+magenta   #d33682
+violet    #6c71c4
+blue      #268bd2
+cyan      #2aa198
+green     #859900
+*/
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #ccc;
-  background: none;
+  color: #657b83;
+  /* base00 */
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 1em;
   text-align: left;
@@ -31,81 +54,102 @@ pre[class*="language-"] {
   hyphens: none;
 }
 
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+  background: #073642;
+  /* base02 */
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+  background: #073642;
+  /* base02 */
+}
+
 /* Code blocks */
 pre[class*="language-"] {
   padding: 1em;
   margin: .5em 0;
   overflow: auto;
+  border-radius: 0.3em;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #2d2d2d;
+  background-color: #fdf6e3;
+  /* base3 */
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
   padding: .1em;
   border-radius: .3em;
-  white-space: normal;
 }
 
 .token.comment,
-.token.block-comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #999;
+  color: #93a1a1;
+  /* base1 */
 }
 
 .token.punctuation {
-  color: #ccc;
+  color: #586e75;
+  /* base01 */
 }
 
-.token.tag,
-.token.attr-name,
-.token.namespace,
-.token.deleted {
-  color: #e2777a;
-}
-
-.token.function-name {
-  color: #6196cc;
-}
-
-.token.boolean,
-.token.number,
-.token.function {
-  color: #f08d49;
+.token.namespace {
+  opacity: .7;
 }
 
 .token.property,
-.token.class-name,
+.token.tag,
+.token.boolean,
+.token.number,
 .token.constant,
-.token.symbol {
-  color: #f8c555;
+.token.symbol,
+.token.deleted {
+  color: #268bd2;
+  /* blue */
 }
 
 .token.selector,
-.token.important,
-.token.atrule,
-.token.keyword,
-.token.builtin {
-  color: #cc99cd;
-}
-
+.token.attr-name,
 .token.string,
 .token.char,
-.token.attr-value,
-.token.regex,
-.token.variable {
-  color: #7ec699;
+.token.builtin,
+.token.url,
+.token.inserted {
+  color: #2aa198;
+  /* cyan */
 }
 
-.token.operator,
-.token.entity,
-.token.url {
-  color: #67cdcc;
+.token.entity {
+  color: #657b83;
+  /* base00 */
+  background: #eee8d5;
+  /* base2 */
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #859900;
+  /* green */
+}
+
+.token.function,
+.token.class-name {
+  color: #b58900;
+  /* yellow */
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #cb4b16;
+  /* orange */
 }
 
 .token.important,
@@ -119,10 +163,6 @@ pre[class*="language-"] {
 
 .token.entity {
   cursor: help;
-}
-
-.token.inserted {
-  color: green;
 }
 
 pre[class*="language-"].line-numbers {
@@ -199,10 +239,6 @@ pre[class*="language-"].line-numbers > code {
   content: attr(data-prompt);
 }
 
-code {
-  background-color: #2d2d2d;
-}
-
 .gridsome-code-title {
   position: relative;
   margin-bottom: -0.8em;
@@ -214,20 +250,6 @@ code {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-.gridsome-code-title {
-  font-style: italic;
-  font-weight: 100;
-  text-align: right;
-  font-family: PT Mono, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  line-height: 1.5;
-  border-top-left-radius: 0.3em;
-  border-top-right-radius: 0.3em;
-}
-
-.gridsome-code-title span {
-  padding: 0.5em;
 }
 
 .gridsome-highlight-code-line {
@@ -335,4 +357,4 @@ pre[class~="language-graphql"]:before {
   color: white;
   content: "graphql";
 }
-/*# sourceMappingURL=tomorrow.css.map */
+/*# sourceMappingURL=solarized.css.map */

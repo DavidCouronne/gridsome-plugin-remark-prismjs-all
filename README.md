@@ -16,14 +16,10 @@
 <!-- /BADGES -->
 
 
-<!-- DESCRIPTION/ -->
-
-Gridsome plugin prism syntax highlighting
-
-<!-- /DESCRIPTION -->
-
-
-# gridsome-plugin-remark-prism-all
+<a href="https://twitter.com/nollan94" target="_blank">
+    <img alt="Twitter: nollan94" src="https://img.shields.io/twitter/follow/nollan94.svg?style=social" />
+</a>
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/DavidCouronne/gridsome-plugin-remark-prismjs-all/issues)
 
 Adds syntax highlighting to code blocks in markdown files using [PrismJS](https://prismjs.com/)
 
@@ -38,7 +34,6 @@ Inspired by [gatsby-remark-prismjs](https://github.com/gatsbyjs/gatsby/tree/mast
 ```bash
 npm i gridsome-plugin-remark-prismjs-all
 ```
-
 
 ### Add plugin in gridsome.config.js
 
@@ -61,20 +56,19 @@ transformers: {
 
 There is only 3 themes available at this time. Contributions welcomes !
 
-
 ```js
 // In your main.js
-require('gridsome-plugin-remark-prismjs-all/themes/night-owl.css');
+require("gridsome-plugin-remark-prismjs-all/themes/night-owl.css");
 ```
 
 ```js
 // In your main.js
-require('gridsome-plugin-remark-prismjs-all/themes/tomorrow.css');
+require("gridsome-plugin-remark-prismjs-all/themes/tomorrow.css");
 ```
 
 ```js
 // In your main.js
-require('gridsome-plugin-remark-prismjs-all/themes/solarized.css');
+require("gridsome-plugin-remark-prismjs-all/themes/solarized.css");
 ```
 
 ## Options
@@ -145,8 +139,6 @@ transformers: {
   }
 ```
 
-
-
 ## Include CSS
 
 ### Required: Pick a PrismJS theme or create your own
@@ -158,7 +150,7 @@ Additional themes: [prism-themes](https://github.com/PrismJS/prism-themes)
 To load a theme, just require its CSS file in your `main.js` file, e.g.
 
 ```js
-require("prismjs/themes/prism-solarizedlight.css")
+require("prismjs/themes/prism-solarizedlight.css");
 ```
 
 ### Add line numbering and line highlighting styles
@@ -167,8 +159,8 @@ If you want to add line numbering alongside your code, you need to import the co
 
 ```js
 //main.js
-require("prismjs/themes/prism-solarizedlight.css")
-require("prismjs/plugins/line-numbers/prism-line-numbers.css")
+require("prismjs/themes/prism-solarizedlight.css");
+require("prismjs/plugins/line-numbers/prism-line-numbers.css");
 ```
 
 You also need to add some additional CSS:
@@ -215,31 +207,31 @@ You also need to add some additional CSS:
 .gridsome-highlight pre[class*="language-"].line-numbers {
   padding-left: 2.8em;
 }
-
 ```
 
 ### Code titles styling
 
 Example:
 
-``````
+````
 ```js{codeTitle: "In src/main.js"}
 require("prismjs/themes/prism-solarizedlight.css")
 require("prismjs/plugins/line-numbers/prism-line-numbers.css")
 require("prismjs/plugins/command-line/prism-command-line.css")
 ```
-``````
+````
 
 is render:
 
 ```html
 <div class="gridsome-code-title">
-    <span>In src/main.js</span>
+  <span>In src/main.js</span>
 </div>
 <div class="gridsome-highlight" data-language="js">
-    <pre class="language-js">
+  <pre class="language-js">
         ... code here
-    </pre>
+    </pre
+  >
 </div>
 ```
 
@@ -247,18 +239,18 @@ You can add this CSS:
 
 ```css
 .gridsome-code-title {
-	position: relative;
-	z-index: 100;
-    margin-bottom: -0.8em;
-    background-color: #feb; //solarized highlight lines color
-    color: red;             // why not ;-)
-    font-style: italic;
-    font-weight: 100;
-    text-align: center;
-    font-family: PT Mono, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-	line-height: 1.5;	
-    border-top-left-radius: 0.3em;
-    border-top-right-radius: 0.3em;	
+  position: relative;
+  z-index: 100;
+  margin-bottom: -0.8em;
+  background-color: #feb; //solarized highlight lines color
+  color: red; // why not ;-)
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+  font-family: PT Mono, Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  line-height: 1.5;
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
 }
 ```
 
@@ -268,30 +260,27 @@ You can also target the `span`tag.
 
 ### Basic usage
 
-``````markdown
+````markdown
 ```js
 const myvar = 'some value";
 ```
-``````
-
-
+````
 
 ### Code Title
 
-``````md
+````md
 ```js{codeTitle: "In src/main.js"}
-require("prismjs/themes/prism-solarizedlight.css")
-require("prismjs/plugins/line-numbers/prism-line-numbers.css")
-require("prismjs/plugins/command-line/prism-command-line.css")
+require("prismjs/themes/prism-solarizedlight.css");
+require("prismjs/plugins/line-numbers/prism-line-numbers.css");
+require("prismjs/plugins/command-line/prism-command-line.css");
 ```
-``````
-
+````
 
 ### Lines Numbers
 
 To see the line numbers alongside your code, you can use the `numberLines` option:
 
-`````md
+````md
 ```html{numberLines: true}
 <template>
   <Layout>
@@ -304,11 +293,12 @@ To see the line numbers alongside your code, you can use the `numberLines` optio
   </Layout>
 </template>
 ```
-``````
+````
+
 You can also start numbering at any index you wish (here, numbering
 will start at index 21):
 
-`````md
+````md
 ```html{numberLines: 21}
 <template>
   <Layout>
@@ -321,9 +311,7 @@ will start at index 21):
   </Layout>
 </template>
 ```
-``````
-
-
+````
 
 ### Lines Highlighting
 
@@ -335,7 +323,7 @@ In the following code snippet, lines 3 and 5 through 7 will get the line
 highlighting. The line range parsing is done with
 <https://www.npmjs.com/package/parse-numeric-range>.
 
-`````md
+````md
 ```html{3,5-7}
 <template>
   <Layout>
@@ -348,13 +336,11 @@ highlighting. The line range parsing is done with
   </Layout>
 </template>
 ```
-``````
-
-
+````
 
 ### All Together
 
-`````md
+````md
 ```html{3,5-7}{numberLines: 21}{codeTitle: "In src/pages/Index.vue"}
 <template>
   <Layout>
@@ -367,10 +353,7 @@ highlighting. The line range parsing is done with
   </Layout>
 </template>
 ```
-``````
-
-
-
+````
 
 ### Prompt
 
@@ -404,15 +387,15 @@ languageExtensions: [
     language: "superscript",
     extend: "javascript",
     definition: {
-      superscript_types: /(SuperType)/,
+      superscript_types: /(SuperType)/
     },
     insertBefore: {
       function: {
-        superscript_keywords: /(superif|superelse)/,
-      },
-    },
-  },
-]
+        superscript_keywords: /(superif|superelse)/
+      }
+    }
+  }
+];
 ```
 
 used options:
@@ -450,7 +433,6 @@ it would result in the following when a match is found:
 ```html
 <span class="token superscript_keywords">superif</span>
 ```
-
 
 <!-- HISTORY/ -->
 

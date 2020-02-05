@@ -19,7 +19,9 @@
 <a href="https://twitter.com/nollan94" target="_blank">
     <img alt="Twitter: nollan94" src="https://img.shields.io/twitter/follow/nollan94.svg?style=social" />
 </a>
+
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/DavidCouronne/gridsome-plugin-remark-prismjs-all/issues)
+
 
 Adds syntax highlighting to code blocks in markdown files using [PrismJS](https://prismjs.com/)
 

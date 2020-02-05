@@ -443,18 +443,3 @@ it would result in the following when a match is found:
 <a href="https://github.com/DavidCouronne/gridsome-plugin-remark-prismjs-all/releases">Discover the release history by heading on over to the releases page.</a>
 
 <!-- /HISTORY -->
-
-
-<!-- LICENSE/ -->
-
-<h2>License</h2>
-
-Unless stated otherwise all works are:
-
-<ul><li>Copyright &copy; David Couronné</li></ul>
-
-and licensed under:
-
-<ul><li><a href="http://spdx.org/licenses/MIT.html">MIT License</a></li></ul>
-
-<!-- /LICENSE -->

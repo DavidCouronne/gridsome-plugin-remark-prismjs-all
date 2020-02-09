@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 :root {
   --code-bg: #2d2d2d;
   --code-title-bg-color: #5b575b;
@@ -266,4 +267,6 @@ code {
   padding-left: 3.8em;
   counter-reset: linenumber;
 }
+
+/* purgecss end ignore */
 /*# sourceMappingURL=tomorrow.css.map */

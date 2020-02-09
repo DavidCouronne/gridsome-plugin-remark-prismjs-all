@@ -1,3 +1,5 @@
+/* purgecss start ignore */
+
 :root {
   --code-bg: #2d2d2d;
   --code-title-bg-color: #5b575b;
@@ -31,3 +33,6 @@ code {
 @import "./code_line";
 @import "./code_highlight";
 //@import "./language-name";
+
+
+/* purgecss end ignore */

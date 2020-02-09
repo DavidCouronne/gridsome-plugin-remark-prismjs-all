@@ -1,3 +1,5 @@
+/* purgecss start ignore */
+
 :root {
   --code-bg: rgb(1, 22, 39);
   --code-title-bg-color: #d2c7ec;
@@ -15,3 +17,5 @@
 @import "./code_highlight";
 
 //@import "./language-name";
+
+/* purgecss end ignore */

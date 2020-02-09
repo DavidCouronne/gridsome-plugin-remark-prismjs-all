@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 :root {
   --code-bg: #fdf6e3;
   --code-title-bg-color: #feb;
@@ -288,4 +289,6 @@ pre[class*="language-"].line-numbers > code {
   padding-left: 3.8em;
   counter-reset: linenumber;
 }
+
+/* purgecss end ignore */
 /*# sourceMappingURL=solarized.css.map */

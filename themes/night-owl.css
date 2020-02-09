@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 :root {
   --code-bg: rgb(1, 22, 39);
   --code-title-bg-color: #d2c7ec;
@@ -276,4 +277,6 @@ pre[class*="language-"].line-numbers > code {
   padding-left: 3.8em;
   counter-reset: linenumber;
 }
+
+/* purgecss end ignore */
 /*# sourceMappingURL=night-owl.css.map */

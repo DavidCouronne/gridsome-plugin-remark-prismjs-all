@@ -1,21 +1,21 @@
 /* purgecss start ignore */
 
 :root {
-    --code-bg: #fdf6e3;
-    --code-title-bg-color: #feb;
-    --code-title-color: #000;
-    --code-line-bg: #feb;
-    --code-line-border-color: #f99;
-  }
-  @import "prism-solarized";
-  @import "prism-line-numbers";
-  @import "prism-command-line";
-  
-  @import "./code-title";
-  @import "./code_line";
-  
-  @import "./code_highlight";
-  
- // @import "./language-name";
+  --code-bg: #fdf6e3;
+  --code-title-bg-color: #feb;
+  --code-title-color: #000;
+  --code-line-bg: #feb;
+  --code-line-border-color: #f99;
+}
+@import "prism-solarized";
+@import "prism-line-numbers";
+@import "prism-command-line";
 
- /* purgecss end ignore */
+@import "./code-title";
+@import "./code_line";
+
+@import "./code_highlight";
+
+// @import "./language-name";
+
+/* purgecss end ignore */

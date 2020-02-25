@@ -1,26 +1,26 @@
 .gridsome-highlight {
-    background-color: var(--code-bg);
-  
-    position: relative;
-  
-    margin: 0.5em 0;
-    padding: 1em;
-    overflow: auto;
-  }
-  
-  .gridsome-highlight pre[class*="language-"] {
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    overflow: initial;
-    float: left; /* 1 */
-    min-width: 100%; /* 2 */
-  }
-  
-  .gridsome-highlight pre[class*="language-"].line-numbers {
-    position: relative;
-    padding-left: 3.8em;
-    counter-reset: linenumber;
-  }
+  background-color: var(--code-bg);
+
+  position: relative;
+
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+.gridsome-highlight pre[class*="language-"] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: initial;
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+}
+
+.gridsome-highlight pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}

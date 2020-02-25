@@ -51,10 +51,10 @@ samp {
   /* Code blocks */
 }
 
-.gridsome-highlight code[class*='language-'],
-.gridsome-highlight pre[class*='language-'] {
+.gridsome-highlight code[class*="language-"],
+.gridsome-highlight pre[class*="language-"] {
   color: #d6deeb;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -69,25 +69,25 @@ samp {
   hyphens: none;
 }
 
-.gridsome-highlight pre[class*='language-']::-moz-selection,
-.gridsome-highlight pre[class*='language-'] ::-moz-selection,
-.gridsome-highlight code[class*='language-']::-moz-selection,
-.gridsome-highlight code[class*='language-'] ::-moz-selection {
+.gridsome-highlight pre[class*="language-"]::-moz-selection,
+.gridsome-highlight pre[class*="language-"] ::-moz-selection,
+.gridsome-highlight code[class*="language-"]::-moz-selection,
+.gridsome-highlight code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: white;
+  background: rgba(29, 59, 83, 0.99);
 }
 
-.gridsome-highlight pre[class*='language-']::selection,
-.gridsome-highlight pre[class*='language-'] ::selection,
-.gridsome-highlight code[class*='language-']::selection,
-.gridsome-highlight code[class*='language-'] ::selection {
+.gridsome-highlight pre[class*="language-"]::selection,
+.gridsome-highlight pre[class*="language-"] ::selection,
+.gridsome-highlight code[class*="language-"]::selection,
+.gridsome-highlight code[class*="language-"] ::selection {
   text-shadow: none;
-  background: white;
+  background: rgba(29, 59, 83, 0.99);
 }
 
 @media print {
-  .gridsome-highlight code[class*='language-'],
-  .gridsome-highlight pre[class*='language-'] {
+  .gridsome-highlight code[class*="language-"],
+  .gridsome-highlight pre[class*="language-"] {
     text-shadow: none;
   }
 }
@@ -197,18 +197,18 @@ samp {
   font-style: italic;
 }
 
-pre[class*="language-"].line-numbers {
+.gridsome-highlight pre[class*="language-"].line-numbers {
   position: relative;
   padding-left: 3.8em;
   counter-reset: linenumber;
 }
 
-pre[class*="language-"].line-numbers > code {
+.gridsome-highlight pre[class*="language-"].line-numbers > code {
   position: relative;
   white-space: inherit;
 }
 
-.line-numbers .line-numbers-rows {
+.gridsome-highlight .line-numbers .line-numbers-rows {
   position: absolute;
   pointer-events: none;
   top: 0;
@@ -224,13 +224,13 @@ pre[class*="language-"].line-numbers > code {
   user-select: none;
 }
 
-.line-numbers-rows > span {
+.gridsome-highlight .line-numbers-rows > span {
   pointer-events: none;
   display: block;
   counter-increment: linenumber;
 }
 
-.line-numbers-rows > span:before {
+.gridsome-highlight .line-numbers-rows > span:before {
   content: counter(linenumber);
   color: #999;
   display: block;
@@ -238,7 +238,7 @@ pre[class*="language-"].line-numbers > code {
   text-align: right;
 }
 
-.command-line-prompt {
+.gridsome-highlight .command-line-prompt {
   border-right: 1px solid #999;
   display: block;
   float: left;
@@ -252,22 +252,22 @@ pre[class*="language-"].line-numbers > code {
   user-select: none;
 }
 
-.command-line-prompt > span:before {
+.gridsome-highlight .command-line-prompt > span:before {
   color: #999;
-  content: ' ';
+  content: " ";
   display: block;
   padding-right: 0.8em;
 }
 
-.command-line-prompt > span[data-user]:before {
+.gridsome-highlight .command-line-prompt > span[data-user]:before {
   content: "[" attr(data-user) "@" attr(data-host) "] $";
 }
 
-.command-line-prompt > span[data-user="root"]:before {
+.gridsome-highlight .command-line-prompt > span[data-user="root"]:before {
   content: "[" attr(data-user) "@" attr(data-host) "] #";
 }
 
-.command-line-prompt > span[data-prompt]:before {
+.gridsome-highlight .command-line-prompt > span[data-prompt]:before {
   content: attr(data-prompt);
 }
 

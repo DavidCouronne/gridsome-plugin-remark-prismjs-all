@@ -35,11 +35,16 @@ blue      #268bd2
 cyan      #2aa198
 green     #859900
 */
-code[class*="language-"],
-pre[class*="language-"] {
+.gridsome-highlight {
+  /* Code blocks */
+  /* Inline code */
+}
+
+.gridsome-highlight code[class*="language-"],
+.gridsome-highlight pre[class*="language-"] {
   color: #657b83;
   /* base00 */
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-size: 1em;
   text-align: left;
   white-space: pre;
@@ -55,129 +60,131 @@ pre[class*="language-"] {
   hyphens: none;
 }
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+.gridsome-highlight pre[class*="language-"]::-moz-selection,
+.gridsome-highlight pre[class*="language-"] ::-moz-selection,
+.gridsome-highlight code[class*="language-"]::-moz-selection,
+.gridsome-highlight code[class*="language-"] ::-moz-selection {
   background: #073642;
   /* base02 */
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-code[class*="language-"]::selection, code[class*="language-"] ::selection {
+.gridsome-highlight pre[class*="language-"]::selection,
+.gridsome-highlight pre[class*="language-"] ::selection,
+.gridsome-highlight code[class*="language-"]::selection,
+.gridsome-highlight code[class*="language-"] ::selection {
   background: #073642;
   /* base02 */
 }
 
-/* Code blocks */
-pre[class*="language-"] {
+.gridsome-highlight pre[class*="language-"] {
   padding: 1em;
-  margin: .5em 0;
+  margin: 0.5em 0;
   overflow: auto;
   border-radius: 0.3em;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+.gridsome-highlight :not(pre) > code[class*="language-"],
+.gridsome-highlight pre[class*="language-"] {
   background-color: #fdf6e3;
   /* base3 */
 }
 
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
+.gridsome-highlight :not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
+.gridsome-highlight .token.comment,
+.gridsome-highlight .token.prolog,
+.gridsome-highlight .token.doctype,
+.gridsome-highlight .token.cdata {
   color: #93a1a1;
   /* base1 */
 }
 
-.token.punctuation {
+.gridsome-highlight .token.punctuation {
   color: #586e75;
   /* base01 */
 }
 
-.token.namespace {
-  opacity: .7;
+.gridsome-highlight .token.namespace {
+  opacity: 0.7;
 }
 
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
+.gridsome-highlight .token.property,
+.gridsome-highlight .token.tag,
+.gridsome-highlight .token.boolean,
+.gridsome-highlight .token.number,
+.gridsome-highlight .token.constant,
+.gridsome-highlight .token.symbol,
+.gridsome-highlight .token.deleted {
   color: #268bd2;
   /* blue */
 }
 
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.url,
-.token.inserted {
+.gridsome-highlight .token.selector,
+.gridsome-highlight .token.attr-name,
+.gridsome-highlight .token.string,
+.gridsome-highlight .token.char,
+.gridsome-highlight .token.builtin,
+.gridsome-highlight .token.url,
+.gridsome-highlight .token.inserted {
   color: #2aa198;
   /* cyan */
 }
 
-.token.entity {
+.gridsome-highlight .token.entity {
   color: #657b83;
   /* base00 */
   background: #eee8d5;
   /* base2 */
 }
 
-.token.atrule,
-.token.attr-value,
-.token.keyword {
+.gridsome-highlight .token.atrule,
+.gridsome-highlight .token.attr-value,
+.gridsome-highlight .token.keyword {
   color: #859900;
   /* green */
 }
 
-.token.function,
-.token.class-name {
+.gridsome-highlight .token.function,
+.gridsome-highlight .token.class-name {
   color: #b58900;
   /* yellow */
 }
 
-.token.regex,
-.token.important,
-.token.variable {
+.gridsome-highlight .token.regex,
+.gridsome-highlight .token.important,
+.gridsome-highlight .token.variable {
   color: #cb4b16;
   /* orange */
 }
 
-.token.important,
-.token.bold {
+.gridsome-highlight .token.important,
+.gridsome-highlight .token.bold {
   font-weight: bold;
 }
 
-.token.italic {
+.gridsome-highlight .token.italic {
   font-style: italic;
 }
 
-.token.entity {
+.gridsome-highlight .token.entity {
   cursor: help;
 }
 
-pre[class*="language-"].line-numbers {
+.gridsome-highlight pre[class*="language-"].line-numbers {
   position: relative;
   padding-left: 3.8em;
   counter-reset: linenumber;
 }
 
-pre[class*="language-"].line-numbers > code {
+.gridsome-highlight pre[class*="language-"].line-numbers > code {
   position: relative;
   white-space: inherit;
 }
 
-.line-numbers .line-numbers-rows {
+.gridsome-highlight .line-numbers .line-numbers-rows {
   position: absolute;
   pointer-events: none;
   top: 0;
@@ -193,13 +200,13 @@ pre[class*="language-"].line-numbers > code {
   user-select: none;
 }
 
-.line-numbers-rows > span {
+.gridsome-highlight .line-numbers-rows > span {
   pointer-events: none;
   display: block;
   counter-increment: linenumber;
 }
 
-.line-numbers-rows > span:before {
+.gridsome-highlight .line-numbers-rows > span:before {
   content: counter(linenumber);
   color: #999;
   display: block;
@@ -207,7 +214,7 @@ pre[class*="language-"].line-numbers > code {
   text-align: right;
 }
 
-.command-line-prompt {
+.gridsome-highlight .command-line-prompt {
   border-right: 1px solid #999;
   display: block;
   float: left;
@@ -221,22 +228,22 @@ pre[class*="language-"].line-numbers > code {
   user-select: none;
 }
 
-.command-line-prompt > span:before {
+.gridsome-highlight .command-line-prompt > span:before {
   color: #999;
-  content: ' ';
+  content: " ";
   display: block;
   padding-right: 0.8em;
 }
 
-.command-line-prompt > span[data-user]:before {
+.gridsome-highlight .command-line-prompt > span[data-user]:before {
   content: "[" attr(data-user) "@" attr(data-host) "] $";
 }
 
-.command-line-prompt > span[data-user="root"]:before {
+.gridsome-highlight .command-line-prompt > span[data-user="root"]:before {
   content: "[" attr(data-user) "@" attr(data-host) "] #";
 }
 
-.command-line-prompt > span[data-prompt]:before {
+.gridsome-highlight .command-line-prompt > span[data-prompt]:before {
   content: attr(data-prompt);
 }
 

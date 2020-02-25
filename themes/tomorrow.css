@@ -12,11 +12,16 @@
  * Based on https://github.com/chriskempson/tomorrow-theme
  * @author Rose Pritchard
  */
-code[class*="language-"],
-pre[class*="language-"] {
+.gridsome-highlight {
+  /* Code blocks */
+  /* Inline code */
+}
+
+.gridsome-highlight code[class*="language-"],
+.gridsome-highlight pre[class*="language-"] {
   color: #ccc;
   background: none;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-size: 1em;
   text-align: left;
   white-space: pre;
@@ -32,112 +37,110 @@ pre[class*="language-"] {
   hyphens: none;
 }
 
-/* Code blocks */
-pre[class*="language-"] {
+.gridsome-highlight pre[class*="language-"] {
   padding: 1em;
-  margin: .5em 0;
+  margin: 0.5em 0;
   overflow: auto;
 }
 
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+.gridsome-highlight :not(pre) > code[class*="language-"],
+.gridsome-highlight pre[class*="language-"] {
   background: #2d2d2d;
 }
 
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
+.gridsome-highlight :not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
   white-space: normal;
 }
 
-.token.comment,
-.token.block-comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
+.gridsome-highlight .token.comment,
+.gridsome-highlight .token.block-comment,
+.gridsome-highlight .token.prolog,
+.gridsome-highlight .token.doctype,
+.gridsome-highlight .token.cdata {
   color: #999;
 }
 
-.token.punctuation {
+.gridsome-highlight .token.punctuation {
   color: #ccc;
 }
 
-.token.tag,
-.token.attr-name,
-.token.namespace,
-.token.deleted {
+.gridsome-highlight .token.tag,
+.gridsome-highlight .token.attr-name,
+.gridsome-highlight .token.namespace,
+.gridsome-highlight .token.deleted {
   color: #e2777a;
 }
 
-.token.function-name {
+.gridsome-highlight .token.function-name {
   color: #6196cc;
 }
 
-.token.boolean,
-.token.number,
-.token.function {
+.gridsome-highlight .token.boolean,
+.gridsome-highlight .token.number,
+.gridsome-highlight .token.function {
   color: #f08d49;
 }
 
-.token.property,
-.token.class-name,
-.token.constant,
-.token.symbol {
+.gridsome-highlight .token.property,
+.gridsome-highlight .token.class-name,
+.gridsome-highlight .token.constant,
+.gridsome-highlight .token.symbol {
   color: #f8c555;
 }
 
-.token.selector,
-.token.important,
-.token.atrule,
-.token.keyword,
-.token.builtin {
+.gridsome-highlight .token.selector,
+.gridsome-highlight .token.important,
+.gridsome-highlight .token.atrule,
+.gridsome-highlight .token.keyword,
+.gridsome-highlight .token.builtin {
   color: #cc99cd;
 }
 
-.token.string,
-.token.char,
-.token.attr-value,
-.token.regex,
-.token.variable {
+.gridsome-highlight .token.string,
+.gridsome-highlight .token.char,
+.gridsome-highlight .token.attr-value,
+.gridsome-highlight .token.regex,
+.gridsome-highlight .token.variable {
   color: #7ec699;
 }
 
-.token.operator,
-.token.entity,
-.token.url {
+.gridsome-highlight .token.operator,
+.gridsome-highlight .token.entity,
+.gridsome-highlight .token.url {
   color: #67cdcc;
 }
 
-.token.important,
-.token.bold {
+.gridsome-highlight .token.important,
+.gridsome-highlight .token.bold {
   font-weight: bold;
 }
 
-.token.italic {
+.gridsome-highlight .token.italic {
   font-style: italic;
 }
 
-.token.entity {
+.gridsome-highlight .token.entity {
   cursor: help;
 }
 
-.token.inserted {
+.gridsome-highlight .token.inserted {
   color: green;
 }
 
-pre[class*="language-"].line-numbers {
+.gridsome-highlight pre[class*="language-"].line-numbers {
   position: relative;
   padding-left: 3.8em;
   counter-reset: linenumber;
 }
 
-pre[class*="language-"].line-numbers > code {
+.gridsome-highlight pre[class*="language-"].line-numbers > code {
   position: relative;
   white-space: inherit;
 }
 
-.line-numbers .line-numbers-rows {
+.gridsome-highlight .line-numbers .line-numbers-rows {
   position: absolute;
   pointer-events: none;
   top: 0;
@@ -153,13 +156,13 @@ pre[class*="language-"].line-numbers > code {
   user-select: none;
 }
 
-.line-numbers-rows > span {
+.gridsome-highlight .line-numbers-rows > span {
   pointer-events: none;
   display: block;
   counter-increment: linenumber;
 }
 
-.line-numbers-rows > span:before {
+.gridsome-highlight .line-numbers-rows > span:before {
   content: counter(linenumber);
   color: #999;
   display: block;
@@ -167,7 +170,7 @@ pre[class*="language-"].line-numbers > code {
   text-align: right;
 }
 
-.command-line-prompt {
+.gridsome-highlight .command-line-prompt {
   border-right: 1px solid #999;
   display: block;
   float: left;
@@ -181,22 +184,22 @@ pre[class*="language-"].line-numbers > code {
   user-select: none;
 }
 
-.command-line-prompt > span:before {
+.gridsome-highlight .command-line-prompt > span:before {
   color: #999;
-  content: ' ';
+  content: " ";
   display: block;
   padding-right: 0.8em;
 }
 
-.command-line-prompt > span[data-user]:before {
+.gridsome-highlight .command-line-prompt > span[data-user]:before {
   content: "[" attr(data-user) "@" attr(data-host) "] $";
 }
 
-.command-line-prompt > span[data-user="root"]:before {
+.gridsome-highlight .command-line-prompt > span[data-user="root"]:before {
   content: "[" attr(data-user) "@" attr(data-host) "] #";
 }
 
-.command-line-prompt > span[data-prompt]:before {
+.gridsome-highlight .command-line-prompt > span[data-prompt]:before {
   content: attr(data-prompt);
 }
 

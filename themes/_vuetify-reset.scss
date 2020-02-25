@@ -1,0 +1,41 @@
+/* reset vuetify*/
+code,
+kbd,
+pre,
+samp {
+  font-family: initial;
+  /* Specify the font family of code elements */
+}
+.v-application code:after,
+.v-application code:before,
+.v-application kbd:after,
+.v-application kbd:before {
+  content: initial;
+  letter-spacing: initial;
+}
+.v-application code {
+  background-color: initial;
+  // color: initial;
+  box-shadow: initial;
+}
+.v-application kbd {
+  background: initial;
+  // color: initial;
+}
+.v-application code,
+.v-application kbd {
+  display: initial;
+  border-radius: initial;
+  white-space: initial;
+  font-size: initial;
+  font-weight: initial;
+}
+
+
+
+.v-application code {
+  background-color: var(--code-bg);
+}
+
+
+

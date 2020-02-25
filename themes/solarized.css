@@ -35,13 +35,8 @@ blue      #268bd2
 cyan      #2aa198
 green     #859900
 */
-.gridsome-highlight {
-  /* Code blocks */
-  /* Inline code */
-}
-
-.gridsome-highlight code[class*="language-"],
-.gridsome-highlight pre[class*="language-"] {
+code[class*="language-"],
+pre[class*="language-"] {
   color: #657b83;
   /* base00 */
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
@@ -60,131 +55,133 @@ green     #859900
   hyphens: none;
 }
 
-.gridsome-highlight pre[class*="language-"]::-moz-selection,
-.gridsome-highlight pre[class*="language-"] ::-moz-selection,
-.gridsome-highlight code[class*="language-"]::-moz-selection,
-.gridsome-highlight code[class*="language-"] ::-moz-selection {
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
   background: #073642;
   /* base02 */
 }
 
-.gridsome-highlight pre[class*="language-"]::selection,
-.gridsome-highlight pre[class*="language-"] ::selection,
-.gridsome-highlight code[class*="language-"]::selection,
-.gridsome-highlight code[class*="language-"] ::selection {
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
   background: #073642;
   /* base02 */
 }
 
-.gridsome-highlight pre[class*="language-"] {
+/* Code blocks */
+pre[class*="language-"] {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
   border-radius: 0.3em;
 }
 
-.gridsome-highlight :not(pre) > code[class*="language-"],
-.gridsome-highlight pre[class*="language-"] {
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
   background-color: #fdf6e3;
   /* base3 */
 }
 
-.gridsome-highlight :not(pre) > code[class*="language-"] {
+/* Inline code */
+:not(pre) > code[class*="language-"] {
   padding: 0.1em;
   border-radius: 0.3em;
 }
 
-.gridsome-highlight .token.comment,
-.gridsome-highlight .token.prolog,
-.gridsome-highlight .token.doctype,
-.gridsome-highlight .token.cdata {
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
   color: #93a1a1;
   /* base1 */
 }
 
-.gridsome-highlight .token.punctuation {
+.token.punctuation {
   color: #586e75;
   /* base01 */
 }
 
-.gridsome-highlight .token.namespace {
+.token.namespace {
   opacity: 0.7;
 }
 
-.gridsome-highlight .token.property,
-.gridsome-highlight .token.tag,
-.gridsome-highlight .token.boolean,
-.gridsome-highlight .token.number,
-.gridsome-highlight .token.constant,
-.gridsome-highlight .token.symbol,
-.gridsome-highlight .token.deleted {
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
   color: #268bd2;
   /* blue */
 }
 
-.gridsome-highlight .token.selector,
-.gridsome-highlight .token.attr-name,
-.gridsome-highlight .token.string,
-.gridsome-highlight .token.char,
-.gridsome-highlight .token.builtin,
-.gridsome-highlight .token.url,
-.gridsome-highlight .token.inserted {
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.url,
+.token.inserted {
   color: #2aa198;
   /* cyan */
 }
 
-.gridsome-highlight .token.entity {
+.token.entity {
   color: #657b83;
   /* base00 */
   background: #eee8d5;
   /* base2 */
 }
 
-.gridsome-highlight .token.atrule,
-.gridsome-highlight .token.attr-value,
-.gridsome-highlight .token.keyword {
+.token.atrule,
+.token.attr-value,
+.token.keyword {
   color: #859900;
   /* green */
 }
 
-.gridsome-highlight .token.function,
-.gridsome-highlight .token.class-name {
+.token.function,
+.token.class-name {
   color: #b58900;
   /* yellow */
 }
 
-.gridsome-highlight .token.regex,
-.gridsome-highlight .token.important,
-.gridsome-highlight .token.variable {
+.token.regex,
+.token.important,
+.token.variable {
   color: #cb4b16;
   /* orange */
 }
 
-.gridsome-highlight .token.important,
-.gridsome-highlight .token.bold {
+.token.important,
+.token.bold {
   font-weight: bold;
 }
 
-.gridsome-highlight .token.italic {
+.token.italic {
   font-style: italic;
 }
 
-.gridsome-highlight .token.entity {
+.token.entity {
   cursor: help;
 }
 
-.gridsome-highlight pre[class*="language-"].line-numbers {
+pre[class*="language-"].line-numbers {
   position: relative;
   padding-left: 3.8em;
   counter-reset: linenumber;
 }
 
-.gridsome-highlight pre[class*="language-"].line-numbers > code {
+pre[class*="language-"].line-numbers > code {
   position: relative;
   white-space: inherit;
 }
 
-.gridsome-highlight .line-numbers .line-numbers-rows {
+.line-numbers .line-numbers-rows {
   position: absolute;
   pointer-events: none;
   top: 0;
@@ -200,13 +197,13 @@ green     #859900
   user-select: none;
 }
 
-.gridsome-highlight .line-numbers-rows > span {
+.line-numbers-rows > span {
   pointer-events: none;
   display: block;
   counter-increment: linenumber;
 }
 
-.gridsome-highlight .line-numbers-rows > span:before {
+.line-numbers-rows > span:before {
   content: counter(linenumber);
   color: #999;
   display: block;
@@ -214,7 +211,7 @@ green     #859900
   text-align: right;
 }
 
-.gridsome-highlight .command-line-prompt {
+.command-line-prompt {
   border-right: 1px solid #999;
   display: block;
   float: left;
@@ -228,22 +225,22 @@ green     #859900
   user-select: none;
 }
 
-.gridsome-highlight .command-line-prompt > span:before {
+.command-line-prompt > span:before {
   color: #999;
   content: " ";
   display: block;
   padding-right: 0.8em;
 }
 
-.gridsome-highlight .command-line-prompt > span[data-user]:before {
+.command-line-prompt > span[data-user]:before {
   content: "[" attr(data-user) "@" attr(data-host) "] $";
 }
 
-.gridsome-highlight .command-line-prompt > span[data-user="root"]:before {
+.command-line-prompt > span[data-user="root"]:before {
   content: "[" attr(data-user) "@" attr(data-host) "] #";
 }
 
-.gridsome-highlight .command-line-prompt > span[data-prompt]:before {
+.command-line-prompt > span[data-prompt]:before {
   content: attr(data-prompt);
 }
 

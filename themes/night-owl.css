@@ -7,52 +7,8 @@
   --code-line-border-color: rgb(2, 155, 206);
 }
 
-/* reset vuetify*/
-code,
-kbd,
-pre,
-samp {
-  font-family: initial;
-  /* Specify the font family of code elements */
-}
-
-.v-application code:after,
-.v-application code:before,
-.v-application kbd:after,
-.v-application kbd:before {
-  content: initial;
-  letter-spacing: initial;
-}
-
-.v-application code {
-  background-color: initial;
-  -webkit-box-shadow: initial;
-          box-shadow: initial;
-}
-
-.v-application kbd {
-  background: initial;
-}
-
-.v-application code,
-.v-application kbd {
-  display: initial;
-  border-radius: initial;
-  white-space: initial;
-  font-size: initial;
-  font-weight: initial;
-}
-
-.v-application code {
-  background-color: var(--code-bg);
-}
-
-.gridsome-highlight {
-  /* Code blocks */
-}
-
-.gridsome-highlight code[class*="language-"],
-.gridsome-highlight pre[class*="language-"] {
+code[class*="language-"],
+pre[class*="language-"] {
   color: #d6deeb;
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   text-align: left;
@@ -69,146 +25,147 @@ samp {
   hyphens: none;
 }
 
-.gridsome-highlight pre[class*="language-"]::-moz-selection,
-.gridsome-highlight pre[class*="language-"] ::-moz-selection,
-.gridsome-highlight code[class*="language-"]::-moz-selection,
-.gridsome-highlight code[class*="language-"] ::-moz-selection {
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
   text-shadow: none;
   background: rgba(29, 59, 83, 0.99);
 }
 
-.gridsome-highlight pre[class*="language-"]::selection,
-.gridsome-highlight pre[class*="language-"] ::selection,
-.gridsome-highlight code[class*="language-"]::selection,
-.gridsome-highlight code[class*="language-"] ::selection {
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
   text-shadow: none;
   background: rgba(29, 59, 83, 0.99);
 }
 
 @media print {
-  .gridsome-highlight code[class*="language-"],
-  .gridsome-highlight pre[class*="language-"] {
+  code[class*="language-"],
+  pre[class*="language-"] {
     text-shadow: none;
   }
 }
 
-.gridsome-highlight pre {
+/* Code blocks */
+pre {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
 }
 
-.gridsome-highlight :not(pre) > code,
-.gridsome-highlight pre {
+:not(pre) > code,
+pre {
   color: white;
   background: #011627;
 }
 
-.gridsome-highlight :not(pre) > code {
+:not(pre) > code {
   padding: 0.1em;
   border-radius: 0.3em;
   white-space: normal;
 }
 
-.gridsome-highlight .token.comment,
-.gridsome-highlight .token.prolog,
-.gridsome-highlight .token.cdata {
+.token.comment,
+.token.prolog,
+.token.cdata {
   color: #637777;
   font-style: italic;
 }
 
-.gridsome-highlight .token.punctuation {
+.token.punctuation {
   color: #c792ea;
 }
 
-.gridsome-highlight .namespace {
+.namespace {
   color: #b2ccd6;
 }
 
-.gridsome-highlight .token.deleted {
+.token.deleted {
   color: rgba(239, 83, 80, 0.56);
   font-style: italic;
 }
 
-.gridsome-highlight .token.symbol,
-.gridsome-highlight .token.property {
+.token.symbol,
+.token.property {
   color: #80cbc4;
 }
 
-.gridsome-highlight .token.tag,
-.gridsome-highlight .token.operator,
-.gridsome-highlight .token.keyword {
+.token.tag,
+.token.operator,
+.token.keyword {
   color: #7fdbca;
 }
 
-.gridsome-highlight .token.boolean {
+.token.boolean {
   color: #ff5874;
 }
 
-.gridsome-highlight .token.number {
+.token.number {
   color: #f78c6c;
 }
 
-.gridsome-highlight .token.constant,
-.gridsome-highlight .token.function,
-.gridsome-highlight .token.builtin,
-.gridsome-highlight .token.char {
+.token.constant,
+.token.function,
+.token.builtin,
+.token.char {
   color: #82aaff;
 }
 
-.gridsome-highlight .token.selector,
-.gridsome-highlight .token.doctype {
+.token.selector,
+.token.doctype {
   color: #c792ea;
   font-style: italic;
 }
 
-.gridsome-highlight .token.attr-name,
-.gridsome-highlight .token.inserted {
+.token.attr-name,
+.token.inserted {
   color: #addb67;
   font-style: italic;
 }
 
-.gridsome-highlight .token.string,
-.gridsome-highlight .token.url,
-.gridsome-highlight .token.entity,
-.gridsome-highlight .language-css .token.string,
-.gridsome-highlight .style .token.string {
+.token.string,
+.token.url,
+.token.entity,
+.language-css .token.string,
+.style .token.string {
   color: #addb67;
 }
 
-.gridsome-highlight .token.class-name,
-.gridsome-highlight .token.atrule,
-.gridsome-highlight .token.attr-value {
+.token.class-name,
+.token.atrule,
+.token.attr-value {
   color: #ffcb8b;
 }
 
-.gridsome-highlight .token.regex,
-.gridsome-highlight .token.important,
-.gridsome-highlight .token.variable {
+.token.regex,
+.token.important,
+.token.variable {
   color: #d6deeb;
 }
 
-.gridsome-highlight .token.important,
-.gridsome-highlight .token.bold {
+.token.important,
+.token.bold {
   font-weight: bold;
 }
 
-.gridsome-highlight .token.italic {
+.token.italic {
   font-style: italic;
 }
 
-.gridsome-highlight pre[class*="language-"].line-numbers {
+pre[class*="language-"].line-numbers {
   position: relative;
   padding-left: 3.8em;
   counter-reset: linenumber;
 }
 
-.gridsome-highlight pre[class*="language-"].line-numbers > code {
+pre[class*="language-"].line-numbers > code {
   position: relative;
   white-space: inherit;
 }
 
-.gridsome-highlight .line-numbers .line-numbers-rows {
+.line-numbers .line-numbers-rows {
   position: absolute;
   pointer-events: none;
   top: 0;
@@ -224,13 +181,13 @@ samp {
   user-select: none;
 }
 
-.gridsome-highlight .line-numbers-rows > span {
+.line-numbers-rows > span {
   pointer-events: none;
   display: block;
   counter-increment: linenumber;
 }
 
-.gridsome-highlight .line-numbers-rows > span:before {
+.line-numbers-rows > span:before {
   content: counter(linenumber);
   color: #999;
   display: block;
@@ -238,7 +195,7 @@ samp {
   text-align: right;
 }
 
-.gridsome-highlight .command-line-prompt {
+.command-line-prompt {
   border-right: 1px solid #999;
   display: block;
   float: left;
@@ -252,22 +209,22 @@ samp {
   user-select: none;
 }
 
-.gridsome-highlight .command-line-prompt > span:before {
+.command-line-prompt > span:before {
   color: #999;
   content: " ";
   display: block;
   padding-right: 0.8em;
 }
 
-.gridsome-highlight .command-line-prompt > span[data-user]:before {
+.command-line-prompt > span[data-user]:before {
   content: "[" attr(data-user) "@" attr(data-host) "] $";
 }
 
-.gridsome-highlight .command-line-prompt > span[data-user="root"]:before {
+.command-line-prompt > span[data-user="root"]:before {
   content: "[" attr(data-user) "@" attr(data-host) "] #";
 }
 
-.gridsome-highlight .command-line-prompt > span[data-prompt]:before {
+.command-line-prompt > span[data-prompt]:before {
   content: attr(data-prompt);
 }
 

@@ -1,59 +1,57 @@
-.gridsome-highlight {
-  pre[class*="language-"]:before {
-    background: white;
-    border-radius: 0 0 0.25rem 0.25rem;
-    color: black;
-    font-size: 12px;
-    letter-spacing: 0.025rem;
-    padding: 0.1rem 0.5rem;
-    position: absolute;
-    left: 1rem;
-    text-align: right;
-    text-transform: uppercase;
-    top: 0;
-  }
-  pre[class*="language-"].line-numbers:before {
-    margin-top: -1.7em;
-    margin-left: 2em;
-  }
-  pre[class~="language-js"]:before {
-    content: "js";
-    background: #61dafb;
-    color: black;
-  }
-  pre[class~="language-html"]:before {
-    content: "html";
-    background: #005a9c;
-    color: white;
-  }
-  pre[class~="language-markdown"]:before {
-    content: "md";
-  }
-  pre[class~="language-md"]:before {
-    content: "md";
-  }
-  pre[class~="language-bash"]:before {
-    content: "bash";
-  }
-  pre[class~="language-shell"]:before {
-    content: "shell";
-  }
-  pre[class~="language-css"]:before {
-    background: rgb(255, 152, 0);
-    color: white;
-    content: "css";
-  }
-  pre[class~="language-jsx"]:before {
-    background: rgb(97, 218, 251);
-    content: "jsx";
-  }
-  pre[class~="language-json"]:before {
-    background: linen;
-    content: "json";
-  }
-  pre[class~="language-graphql"]:before {
-    background: rgb(225, 0, 152);
-    color: white;
-    content: "graphql";
-  }
+pre[class*="language-"]:before {
+  background: white;
+  border-radius: 0 0 0.25rem 0.25rem;
+  color: black;
+  font-size: 12px;
+  letter-spacing: 0.025rem;
+  padding: 0.1rem 0.5rem;
+  position: absolute;
+  left: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0;
+}
+pre[class*="language-"].line-numbers:before {
+  margin-top: -1.7em;
+  margin-left: 2em;
+}
+pre[class~="language-js"]:before {
+  content: "js";
+  background: #61dafb;
+  color: black;
+}
+pre[class~="language-html"]:before {
+  content: "html";
+  background: #005a9c;
+  color: white;
+}
+pre[class~="language-markdown"]:before {
+  content: "md";
+}
+pre[class~="language-md"]:before {
+  content: "md";
+}
+pre[class~="language-bash"]:before {
+  content: "bash";
+}
+pre[class~="language-shell"]:before {
+  content: "shell";
+}
+pre[class~="language-css"]:before {
+  background: rgb(255, 152, 0);
+  color: white;
+  content: "css";
+}
+pre[class~="language-jsx"]:before {
+  background: rgb(97, 218, 251);
+  content: "jsx";
+}
+pre[class~="language-json"]:before {
+  background: linen;
+  content: "json";
+}
+pre[class~="language-graphql"]:before {
+  background: rgb(225, 0, 152);
+  color: white;
+  content: "graphql";
 }

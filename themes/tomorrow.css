@@ -12,13 +12,8 @@
  * Based on https://github.com/chriskempson/tomorrow-theme
  * @author Rose Pritchard
  */
-.gridsome-highlight {
-  /* Code blocks */
-  /* Inline code */
-}
-
-.gridsome-highlight code[class*="language-"],
-.gridsome-highlight pre[class*="language-"] {
+code[class*="language-"],
+pre[class*="language-"] {
   color: #ccc;
   background: none;
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
@@ -37,110 +32,112 @@
   hyphens: none;
 }
 
-.gridsome-highlight pre[class*="language-"] {
+/* Code blocks */
+pre[class*="language-"] {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
 }
 
-.gridsome-highlight :not(pre) > code[class*="language-"],
-.gridsome-highlight pre[class*="language-"] {
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
   background: #2d2d2d;
 }
 
-.gridsome-highlight :not(pre) > code[class*="language-"] {
+/* Inline code */
+:not(pre) > code[class*="language-"] {
   padding: 0.1em;
   border-radius: 0.3em;
   white-space: normal;
 }
 
-.gridsome-highlight .token.comment,
-.gridsome-highlight .token.block-comment,
-.gridsome-highlight .token.prolog,
-.gridsome-highlight .token.doctype,
-.gridsome-highlight .token.cdata {
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
   color: #999;
 }
 
-.gridsome-highlight .token.punctuation {
+.token.punctuation {
   color: #ccc;
 }
 
-.gridsome-highlight .token.tag,
-.gridsome-highlight .token.attr-name,
-.gridsome-highlight .token.namespace,
-.gridsome-highlight .token.deleted {
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
   color: #e2777a;
 }
 
-.gridsome-highlight .token.function-name {
+.token.function-name {
   color: #6196cc;
 }
 
-.gridsome-highlight .token.boolean,
-.gridsome-highlight .token.number,
-.gridsome-highlight .token.function {
+.token.boolean,
+.token.number,
+.token.function {
   color: #f08d49;
 }
 
-.gridsome-highlight .token.property,
-.gridsome-highlight .token.class-name,
-.gridsome-highlight .token.constant,
-.gridsome-highlight .token.symbol {
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
   color: #f8c555;
 }
 
-.gridsome-highlight .token.selector,
-.gridsome-highlight .token.important,
-.gridsome-highlight .token.atrule,
-.gridsome-highlight .token.keyword,
-.gridsome-highlight .token.builtin {
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
   color: #cc99cd;
 }
 
-.gridsome-highlight .token.string,
-.gridsome-highlight .token.char,
-.gridsome-highlight .token.attr-value,
-.gridsome-highlight .token.regex,
-.gridsome-highlight .token.variable {
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
   color: #7ec699;
 }
 
-.gridsome-highlight .token.operator,
-.gridsome-highlight .token.entity,
-.gridsome-highlight .token.url {
+.token.operator,
+.token.entity,
+.token.url {
   color: #67cdcc;
 }
 
-.gridsome-highlight .token.important,
-.gridsome-highlight .token.bold {
+.token.important,
+.token.bold {
   font-weight: bold;
 }
 
-.gridsome-highlight .token.italic {
+.token.italic {
   font-style: italic;
 }
 
-.gridsome-highlight .token.entity {
+.token.entity {
   cursor: help;
 }
 
-.gridsome-highlight .token.inserted {
+.token.inserted {
   color: green;
 }
 
-.gridsome-highlight pre[class*="language-"].line-numbers {
+pre[class*="language-"].line-numbers {
   position: relative;
   padding-left: 3.8em;
   counter-reset: linenumber;
 }
 
-.gridsome-highlight pre[class*="language-"].line-numbers > code {
+pre[class*="language-"].line-numbers > code {
   position: relative;
   white-space: inherit;
 }
 
-.gridsome-highlight .line-numbers .line-numbers-rows {
+.line-numbers .line-numbers-rows {
   position: absolute;
   pointer-events: none;
   top: 0;
@@ -156,13 +153,13 @@
   user-select: none;
 }
 
-.gridsome-highlight .line-numbers-rows > span {
+.line-numbers-rows > span {
   pointer-events: none;
   display: block;
   counter-increment: linenumber;
 }
 
-.gridsome-highlight .line-numbers-rows > span:before {
+.line-numbers-rows > span:before {
   content: counter(linenumber);
   color: #999;
   display: block;
@@ -170,7 +167,7 @@
   text-align: right;
 }
 
-.gridsome-highlight .command-line-prompt {
+.command-line-prompt {
   border-right: 1px solid #999;
   display: block;
   float: left;
@@ -184,22 +181,22 @@
   user-select: none;
 }
 
-.gridsome-highlight .command-line-prompt > span:before {
+.command-line-prompt > span:before {
   color: #999;
   content: " ";
   display: block;
   padding-right: 0.8em;
 }
 
-.gridsome-highlight .command-line-prompt > span[data-user]:before {
+.command-line-prompt > span[data-user]:before {
   content: "[" attr(data-user) "@" attr(data-host) "] $";
 }
 
-.gridsome-highlight .command-line-prompt > span[data-user="root"]:before {
+.command-line-prompt > span[data-user="root"]:before {
   content: "[" attr(data-user) "@" attr(data-host) "] #";
 }
 
-.gridsome-highlight .command-line-prompt > span[data-prompt]:before {
+.command-line-prompt > span[data-prompt]:before {
   content: attr(data-prompt);
 }
 

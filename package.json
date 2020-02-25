@@ -1,6 +1,6 @@
 {
   "name": "gridsome-plugin-remark-prismjs-all",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Gridsome plugin prism syntax highlighting",
   "main": "src/index.js",
   "author": "David Couronné",

@@ -26,7 +26,7 @@
     "lodash": "^4.17.15",
     "parse-numeric-range": "^0.0.2",
     "prismjs": "^1.19.0",
-    "unist-util-visit": "^2.0.1"
+    "unist-util-visit": "^2.0.2"
   },
   "devDependencies": {
     "projectz": "^1.19.0"

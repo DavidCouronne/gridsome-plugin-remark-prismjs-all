@@ -33,13 +33,13 @@ Inspired by [gatsby-remark-prismjs](https://github.com/gatsbyjs/gatsby/tree/mast
 
 ![example](https://github.com/DavidCouronne/gridsome-plugin-remark-prismjs-all/blob/master/snapshots/snapshot-night-owl.png?raw=true)
 
-## Install
+## Installation
 
 ```bash
 npm i gridsome-plugin-remark-prismjs-all
 ```
 
-### Add plugin in gridsome.config.js
+### Add plugin to gridsome.config.js
 
 ```js
 // In your gridsome.config.js
@@ -56,7 +56,7 @@ transformers: {
   }
 ```
 
-### Add theme in your main.js
+### Add theme to your main.js
 
 There is only 3 themes available at this time. Contributions welcomes !
 
@@ -165,6 +165,7 @@ If you want to add line numbering alongside your code, you need to import the co
 //main.js
 require("prismjs/themes/prism-solarizedlight.css");
 require("prismjs/plugins/line-numbers/prism-line-numbers.css");
+
 ```
 
 You also need to add some additional CSS:
@@ -225,7 +226,7 @@ require("prismjs/plugins/command-line/prism-command-line.css")
 ```
 ````
 
-is render:
+Is rendered as:
 
 ```html
 <div class="gridsome-code-title">
@@ -280,7 +281,7 @@ require("prismjs/plugins/command-line/prism-command-line.css");
 ```
 ````
 
-### Lines Numbers
+### Line Numbers
 
 To see the line numbers alongside your code, you can use the `numberLines` option:
 
@@ -317,7 +318,7 @@ will start at index 21):
 ```
 ````
 
-### Lines Highlighting
+### Line Highlighting
 
 You can also add line highlighting. It adds a span around lines of code with a
 special class `.gridsome-highlight-code-line` that you can target with styles.

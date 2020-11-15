@@ -13,6 +13,7 @@ module.exports = options => {
     const customHighlightClassName = options.highlightClassName || `gridsome-highlight`;
     const codeTitleClassName = options.codeTitleClassName || 'gridsome-code-title';
     const classPrefix = options.classPrefix || 'language-';
+    const classPrefixInline = options.classPrefix || 'language-inline-';    
     const inlineCodeMarker = options.inlineCodeMarker || null;
     const aliases = options.aliases || {};
     const noInlineHighlight = options.noInlineHighlight || false;
@@ -95,7 +96,9 @@ module.exports = options => {
         );
         visit(tree, `inlineCode`, node => {
             let languageName = `text`
-      
+            
+            const classInlineName = `${classPrefixInline}${languageName}`
+
             if (inlineCodeMarker) {
               let [language, restOfValue] = node.value.split(`${inlineCodeMarker}`, 2)
               if (language && restOfValue) {
@@ -107,7 +110,7 @@ module.exports = options => {
             const className = `${classPrefix}${languageName}`
       
             node.type = `html`
-            node.value = `<code class="${className}">${highlightCode(
+            node.value = `<code class="${classInlineName}">${highlightCode(
               languageName,
               node.value
             )}</code>`

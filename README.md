@@ -175,14 +175,14 @@ You also need to add some additional CSS:
  * and overflow that we removed from <pre>.
  */
 .gridsome-highlight {
-  background-color: #fdf6e3; //for solarized theme
+  background-color: #fdf6e3; /* for solarized theme */
   border-radius: 0.3em;
   margin: 0.5em 0;
   padding: 1em;
   overflow: auto;
 }
 .gridsome-highlight-code-line {
-  background-color: #feb; //for solarized theme
+  background-color: #feb; /* for solarized theme */
   display: block;
   margin-right: -1em;
   margin-left: -1em;
@@ -246,8 +246,8 @@ You can add this CSS:
   position: relative;
   z-index: 100;
   margin-bottom: -0.8em;
-  background-color: #feb; //solarized highlight lines color
-  color: red; // why not ;-)
+  background-color: #feb; /* solarized highlight lines color */
+  color: red; /* why not ;-) */
   font-style: italic;
   font-weight: 100;
   text-align: center;

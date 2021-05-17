@@ -1,17 +1,17 @@
-const Prism = require(`prismjs`)
-const _ = require(`lodash`)
-const loadPrismLanguage = require(`./load-prism-language`)
-const handleDirectives = require(`./directives`)
+import { languages, highlight } from `prismjs`
+import { escape } from `lodash`
+import loadPrismLanguage from `./load-prism-language`
+import handleDirectives from `./directives`
 const unsupportedLanguages = new Set()
 
-module.exports = (
+export default (
   language,
   code,
   lineNumbersHighlight = [],
   noInlineHighlight = false
 ) => {
   // (Try to) load languages on demand.
-  if (!Prism.languages[language]) {
+  if (!languages[language]) {
     try {
       loadPrismLanguage(language)
     } catch (e) {
@@ -34,12 +34,12 @@ module.exports = (
         console.warn(message, `applying generic code block`)
         unsupportedLanguages.add(lang)
       }
-      return _.escape(code)
+      return escape(code)
     }
   }
 
-  const grammar = Prism.languages[language]
-  const highlighted = Prism.highlight(code, grammar, language)
+  const grammar = languages[language]
+  const highlighted = highlight(code, grammar, language)
   const codeSplits = handleDirectives(highlighted, lineNumbersHighlight)
 
   let finalCode = ``

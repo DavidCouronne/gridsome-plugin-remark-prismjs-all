@@ -1,12 +1,12 @@
-const visit = require("unist-util-visit");
+import visit from "unist-util-visit";
 
-const parseOptions = require(`./parse-options`);
-const highlightCode = require(`./highlight-code`);
-const loadLanguageExtension = require(`./load-prism-language-extension`);
-const addLineNumbers = require(`./add-line-numbers`);
-const commandLine = require(`./command-line`);
+import parseOptions from `./parse-options`;
+import highlightCode from `./highlight-code`;
+import loadLanguageExtension from `./load-prism-language-extension`;
+import addLineNumbers from `./add-line-numbers`;
+import commandLine from `./command-line`;
 
-module.exports = (options) => {
+export default (options) => {
   const customHighlightClassName =
     options.highlightClassName || `gridsome-highlight`;
   const codeTitleClassName =

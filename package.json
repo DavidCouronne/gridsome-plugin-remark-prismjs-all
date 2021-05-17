@@ -1,8 +1,8 @@
 {
   "name": "gridsome-plugin-remark-prismjs-all",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "description": "Gridsome plugin prism syntax highlighting",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "author": "David Couronné",
   "license": "MIT",
   "type": "module",
@@ -27,10 +27,10 @@
     "vuejs"
   ],
   "dependencies": {
-    "lodash": "^4.17.21",
-    "parse-numeric-range": "^1.2.0",
-    "prismjs": "^1.23.0",
-    "unist-util-visit": "^3.1.0"
+    "lodash": "^4.17.15",
+    "parse-numeric-range": "^0.0.2",
+    "prismjs": "^1.19.0",
+    "unist-util-visit": "^2.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.16",

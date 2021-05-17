@@ -4,17 +4,17 @@ specifiers:
   '@babel/cli': ^7.13.16
   '@babel/core': ^7.14.2
   '@babel/preset-env': ^7.14.2
-  lodash: ^4.17.21
-  parse-numeric-range: ^1.2.0
-  prismjs: ^1.23.0
+  lodash: ^4.17.15
+  parse-numeric-range: ^0.0.2
+  prismjs: ^1.19.0
   projectz: ^2.18.0
-  unist-util-visit: ^3.1.0
+  unist-util-visit: ^2.0.2
 
 dependencies:
   lodash: 4.17.21
-  parse-numeric-range: 1.2.0
+  parse-numeric-range: 0.0.2
   prismjs: 1.23.0
-  unist-util-visit: 3.1.0
+  unist-util-visit: 2.0.3
 
 devDependencies:
   '@babel/cli': 7.13.16_@babel+core@7.14.2
@@ -2145,8 +2145,8 @@ packages:
       wrappy: 1.0.2
     dev: true
 
-  /parse-numeric-range/1.2.0:
-    resolution: {integrity: sha512-1q2tXpAOplPxcl8vrIGPWz1dJxxfmdRkCFcpxxMBerDnGuuHalOWF/xj9L8Nn5XoTUoB/6F0CeQBp2fMgkOYFg==}
+  /parse-numeric-range/0.0.2:
+    resolution: {integrity: sha1-tPCdQTx6282Yf26SM8e0shDJOOQ=}
     dev: false
 
   /pascalcase/0.1.1:
@@ -2575,23 +2575,23 @@ packages:
     dev: true
     optional: true
 
-  /unist-util-is/5.1.0:
-    resolution: {integrity: sha512-pWspZ+AvTqYbC+xWeRmzGqbcY8Na08Eowlfs2xchWTYot8vBBAq+syrE/LWS0bw1D/JOu4lwzDbEb6Mz13tK+g==}
+  /unist-util-is/4.1.0:
+    resolution: {integrity: sha512-ZOQSsnce92GrxSqlnEEseX0gi7GH9zTJZ0p9dtu87WRb/37mMPO2Ilx1s/t9vBHrFhbgweUwb+t7cIn5dxPhZg==}
     dev: false
 
-  /unist-util-visit-parents/4.1.1:
-    resolution: {integrity: sha512-1xAFJXAKpnnJl8G7K5KgU7FY55y3GcLIXqkzUj5QF/QVP7biUm0K0O2oqVkYsdjzJKifYeWn9+o6piAK2hGSHw==}
+  /unist-util-visit-parents/3.1.1:
+    resolution: {integrity: sha512-1KROIZWo6bcMrZEwiH2UrXDyalAa0uqzWCxCJj6lPOvTve2WkfgCytoDTPaMnodXh1WrXOq0haVYHj99ynJlsg==}
     dependencies:
       '@types/unist': 2.0.3
-      unist-util-is: 5.1.0
+      unist-util-is: 4.1.0
     dev: false
 
-  /unist-util-visit/3.1.0:
-    resolution: {integrity: sha512-Szoh+R/Ll68QWAyQyZZpQzZQm2UPbxibDvaY8Xc9SUtYgPsDzx5AWSk++UUt2hJuow8mvwR+rG+LQLw+KsuAKA==}
+  /unist-util-visit/2.0.3:
+    resolution: {integrity: sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q==}
     dependencies:
       '@types/unist': 2.0.3
-      unist-util-is: 5.1.0
-      unist-util-visit-parents: 4.1.1
+      unist-util-is: 4.1.0
+      unist-util-visit-parents: 3.1.1
     dev: false
 
   /unset-value/1.0.0:

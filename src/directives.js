@@ -1,4 +1,4 @@
-import { parse } from `parse-numeric-range`
+const rangeParser = require(`parse-numeric-range`)
 
 /**
  * As code has already been prism-highlighted at this point,
@@ -91,7 +91,7 @@ const parseLine = (line, code, index, actions) => {
 
       if (directiveRange) {
         const strippedDirectiveRange = directiveRange.slice(1, -1)
-        const range = parse(strippedDirectiveRange)
+        const range = rangeParser.parse(strippedDirectiveRange)
         if (range.length > 0) {
           range.forEach(relativeIndex => {
             actions.flag(feature, index + relativeIndex, flagSource)
@@ -105,7 +105,7 @@ const parseLine = (line, code, index, actions) => {
   }
 }
 
-export default function highlightLineRange(code, highlights = []) {
+module.exports = function highlightLineRange(code, highlights = []) {
   if (highlights.length > 0 || HIGHLIGHT_DIRECTIVE.test(code)) {
     // HACK split plain-text spans with line separators inside into multiple plain-text spans
     // separated by line separator - this fixes line highlighting behaviour for jsx

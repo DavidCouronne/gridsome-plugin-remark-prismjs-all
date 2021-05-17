@@ -1,4 +1,4 @@
-import visit from 'unist-util-visit';
+const visit = require('unist-util-visit');
 
 const titlePrefix = ":title=";
 
@@ -23,5 +23,4 @@ function codeTitle(tree, customClassName) {
         node.lang = newLang;
     });
 }
-const _codeTitle = codeTitle;
-export { _codeTitle as codeTitle };
+exports.codeTitle = codeTitle;

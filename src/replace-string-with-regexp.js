@@ -1,4 +1,4 @@
-export default function replaceStringWithRegex(object) {
+module.exports = function replaceStringWithRegex(object) {
     Object.keys(object).forEach(propName => {
       if (typeof object[propName] === `string`) {
         try {

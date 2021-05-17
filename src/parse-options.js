@@ -1,6 +1,6 @@
-import { parse } from `parse-numeric-range`
+const rangeParser = require(`parse-numeric-range`)
 
-export default language => {
+module.exports = language => {
   if (!language) {
     return ``
   }
@@ -20,8 +20,8 @@ export default language => {
       let splitOption = option.replace(/ /g, ``).split(`:`)
 
       // Test if the option is for line highlighting
-      if (splitOption.length === 1 && parse(option).length > 0) {
-        highlightLines = parse(option).filter(n => n > 0)
+      if (splitOption.length === 1 && rangeParser.parse(option).length > 0) {
+        highlightLines = rangeParser.parse(option).filter(n => n > 0)
       }
       // Test if the option is for line numbering
       // Option must look like `numberLines: true` or `numberLines: <integer>`
@@ -49,7 +49,8 @@ export default language => {
         codeTitle = option.split(`:`)[1].replace(/"/g, ``)
       }
       if (splitOption.length === 2 && splitOption[0] === `outputLines`) {
-        outputLines = parse(splitOption[1].trim())
+        outputLines = rangeParser
+          .parse(splitOption[1].trim())
           .filter(n => n > 0)
       }
     })

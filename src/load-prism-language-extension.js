@@ -1,8 +1,8 @@
-import { languages } from `prismjs`
-import loadPrismLanguage from `./load-prism-language`
-import replaceStringWithRegex from `./replace-string-with-regexp`
+const Prism = require(`prismjs`)
+const loadPrismLanguage = require(`./load-prism-language`)
+const replaceStringWithRegex = require(`./replace-string-with-regexp`)
 
-export default languageExtensions => {
+module.exports = languageExtensions => {
   //Create array of languageExtensions (if input is object)
   languageExtensions = [].concat(languageExtensions)
 
@@ -42,12 +42,12 @@ let loadLanguageExtension = languageExtension => {
 
   // If 'extend' property is given we start from that language, otherwise we add a language from scratch.
   if (!languageExtension.extend) {
-    languages[languageExtension.language] = languageExtension.definition
+    Prism.languages[languageExtension.language] = languageExtension.definition
   } else {
     //Loads language if not already loaded.
     loadPrismLanguage(languageExtension.extend)
 
-    languages[languageExtension.language] = languages.extend(
+    Prism.languages[languageExtension.language] = Prism.languages.extend(
       languageExtension.extend,
       languageExtension.definition
     )
@@ -60,7 +60,7 @@ let loadLanguageExtension = languageExtension => {
     )
 
     Object.entries(languageExtension.insertBefore).forEach(([key, value]) => {
-      languages.insertBefore(languageExtension.language, key, value)
+      Prism.languages.insertBefore(languageExtension.language, key, value)
     })
   }
 }

@@ -1,4 +1,4 @@
-export default (
+module.exports = (
     code = [],
     highlightLines = [],
     user = `root`,

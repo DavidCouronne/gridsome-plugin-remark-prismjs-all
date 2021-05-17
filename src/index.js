@@ -1,10 +1,10 @@
 import visit from "unist-util-visit";
 
-import parseOptions from `./parse-options`;
-import highlightCode from `./highlight-code`;
-import loadLanguageExtension from `./load-prism-language-extension`;
-import addLineNumbers from `./add-line-numbers`;
-import commandLine from `./command-line`;
+import parseOptions from "./parse-options";
+import highlightCode from "./highlight-code";
+import loadLanguageExtension from "./load-prism-language-extension";
+import addLineNumbers from "./add-line-numbers";
+import commandLine from "./command-line";
 
 export default (options) => {
   const customHighlightClassName =

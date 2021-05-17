@@ -1,4 +1,4 @@
-module.exports = (code = []) => {
+export default (code = []) => {
     // Generate as many `<span></span>` as there are code lines
     const generateSpans = numberOfLines => {
       let spans = ``

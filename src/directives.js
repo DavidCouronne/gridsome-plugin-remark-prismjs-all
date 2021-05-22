@@ -51,7 +51,7 @@ const stripComment = line =>
   )
 
 const highlightWrap = line =>
-  [`<span class="gridsome-highlight-code-line">`, line, `</span>`].join(``)
+  [`<mark class="gridsome-highlight-code-line">`, line, `</mark>`].join(``)
 // const wrapAndStripComment = line => wrap(stripComment(line))
 
 const parseLine = (line, code, index, actions) => {

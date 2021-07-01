@@ -19,7 +19,7 @@
   "keywords": [
     "gridsome",
     "gridsome-plugin",
-    "prismjs",
+    "prismjs@1.23.0",
     "syntax",
     "markdown",
     "remark",

@@ -19,7 +19,7 @@
   "keywords": [
     "gridsome",
     "gridsome-plugin",
-    "prismjs@1.23.0",
+    "prismjs",
     "syntax",
     "markdown",
     "remark",
@@ -28,7 +28,7 @@
   "dependencies": {
     "lodash": "^4.17.15",
     "parse-numeric-range": "^0.0.2",
-    "prismjs": "^1.19.0",
+    "prismjs": "1.23.0",
     "unist-util-visit": "^2.0.2"
   },
   "devDependencies": {
